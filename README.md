@@ -1,1 +1,1 @@
-# mirror
+# projeto-individual da sprint 3 - HTML / CSS / JAVASCRIPT
