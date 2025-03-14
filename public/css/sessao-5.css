@@ -1,19 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+}
+
+.sessao05 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD43B;
+    padding: 20px;
 }
 
 .section_5 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-color: #FFD43B;
-    padding: 20px;
-    position: relative;
-    height: auto;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .section_5 h2 {
@@ -21,57 +28,77 @@ body {
     font-weight: bold;
     font-size: 50px;
     color: white;
-    text-shadow: 2px 2px 4px #00000074;
+    text-shadow: 2px 2px 4px #0000003b;
     margin: 20px;
-    text-align: right;
-    margin-right: 40px;
+    text-align: center;
 }
 
-.papel_5 {
-    background: lightgray;
-    height: 200px;
+.input-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-box div {
+    background: rgb(226, 231, 236);
+    height: 50px;
     width: 40%;
-    margin-top: 10px;
-    border-radius: 0 0 10px 10px;
-    margin-left: 80px;
+    border-radius: 5px;
+}
+
+.input-box input {
+    background: rgb(226, 231, 236);
+    height: 40zpx;
+    width: 30%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.solicitar-contato {
+    background-color: #F4C300;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.solicitar-contato:hover {
+    background-color: #d4a200;
+    
 }
 
 .contato_5 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     background-color: #a10000;
     color: white;
+    padding: 20px;
+    width: 100%;
 }
 
 .contato_5 h2 {
     font-size: 80px;
     font-weight: bold;
     margin-right: 20px;
-    margin-left: 80px;
+    text-align: right;
 }
 
-.contato_5 span {
-    font-size: 14px;
-    font-weight: normal;
-}
-
-.contato_5 .input-box {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    flex: 1;
-}
-
-.input-box {
-    display: flex;
-    gap: 10px;
-    margin-top: 60px;
-    margin-left: 30%;
-}
-
-.input-box div {
+.mapa {
     background: lightgray;
-    height: 40px;
+    height: 250px;
     width: 40%;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
 }
