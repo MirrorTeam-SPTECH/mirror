@@ -1,10 +1,21 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .section-chefs{
     background-color: #7DCD38;
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+
+    .wave-chefs path {
+        fill: #7DCD38; 
+        width: 100%;
+    }
 
         div{
             display: flex;
@@ -20,7 +31,7 @@
             }
 
             h1{
-                font-size: 3.5rem;
+                font-size: 60px;
                 color: #fff;
                 font-family: "Montserrat", sans-serif;
                 letter-spacing: 3px;
@@ -29,7 +40,6 @@
 
     .chefs-container{
         display: flex;
-        margin-top: -5%;
 
         .chef{
             display: flex;
@@ -38,7 +48,7 @@
             justify-content: center;
             flex-direction: row;
             width: 100vw;
-            gap: 30%;
+            gap: 10%;
 
             .chef-info{
                 display: flex;
@@ -48,14 +58,14 @@
                     font-size: 2rem;
                     color: #fff;
                     font-family: "Montserrat", sans-serif;
-                    /* letter-spacing: 2px; */
+                    
                  }
 
                  .p-chefs {
                     font-size: 1.3rem;
                     color: #fff;
                     font-family: "Montserrat", sans-serif;
-                    font-weight: bold; /* Ou um valor numérico, como 700 */
+                    font-weight: bold;
                 }
             }
             .chef-image{
@@ -69,4 +79,6 @@
 
         }
     }
+    
 }
+
