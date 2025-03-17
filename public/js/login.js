@@ -1,54 +1,39 @@
-function autenticar() {
-    const emailVar = input_email.value;
-    const senhaVar = input_senha.value;
-   
-       if (emailVar == "" || senhaVar == "") {
-           
-           alert("Preencha todos os campos!");
-           return false;
-       }
-   
-       console.log("FORM LOGIN: ", emailVar);
-       console.log("FORM SENHA: ", senhaVar);
-   
-       fetch("/usuarios/autenticar", {
-           method: "POST",
-           headers: {
-               "Content-Type": "application/json"
-           },
-           body: JSON.stringify({
-               emailServer: emailVar,
-               senhaServer: senhaVar
-           })
-       }).then(function (resposta) {
-           console.log("ESTOU NO THEN DO entrar()!")
-   
-           if (resposta.ok) {
-               console.log(resposta);
-   
-               resposta.json().then(json => {
-                   console.log(json);
-                   console.log(JSON.stringify(json));
-   
-                       alert("Login realizado com sucesso")
-                       window.location.href="index.html";
-   
-               });
-   
-           } else {
-               alert("Email ou senha incorreto!")
-               console.log("Houve um erro ao tentar realizar o login!");
-   
-               resposta.text().then(texto => {
-                   console.error(texto);
-               });
-           }
-   
-       }).catch(function (erro) {
-           console.log(erro);
-       })
-   
-       return false;
-   }
-   
+document.getElementById('autenticar').addEventListener('click', function (e) {
+    e.preventDefault();
+    const email = document.getElementById('input_email').value;
+    const senha = document.getElementById('input_senha').value;
 
+    if (email == "" || senha == "") {
+        alert("Preencha todos os campos!");
+        return false;
+     } 
+
+    fetch('http://localhost:3000/usuarios', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+    .then(response => {
+        
+        if (!response.ok) {
+            throw new Error('Nenhum usuario encontrado');
+        }
+        return response.json();
+    })
+    .then(data => {
+      console.log(data);
+      console.log( data.find(data => data.email === email && data.senha === senha));
+
+      if (!data.find(data => data.email === email && data.senha === senha)) {
+        alert('Email ou senha inválidos');
+        return false;
+      } 
+      alert('Login realizado com sucesso');
+      window.location.href = "/"
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+        alert('Houve um problema com o login. Tente novamente mais tarde.');
+    });
+});
