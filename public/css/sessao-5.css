@@ -34,6 +34,7 @@
     margin-top: 20px;
     justify-content: center;
     width: 100%;
+    padding-bottom: 40px;
 
     div {
         background: var(--cor-fundo-input);
@@ -105,10 +106,11 @@
         margin-top: -6%;
 
         img {
-            height: 450px;
-            width: 450px;
+            height: 400px;
+            width: 400px;
             margin-top: -5%;
-            margin-left: -20%;
+            margin-left: -10%;
+            padding: 0;
         }
     }
 }

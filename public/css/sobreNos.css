@@ -1,0 +1,40 @@
+:root{
+    --cor-background-sessao: #C26700;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sobreNos{
+    display: flex;
+    flex-direction: column;
+
+
+        & img{
+            width: 100%;
+            height: 130px;
+            z-index: 1000;
+    }
+
+    .container{
+        background-color: var(--cor-background-sessao);
+        display: flex;
+        height: 70vh;
+        width: 100%;
+        margin-top: -70px;
+    }
+
+    .wave-chefs {
+        width: 100%;
+        z-index: 2000;
+        background-color:var(--cor-background-sessao);
+
+        path {
+            fill: #7DCD38;
+            width: 100%;
+        }
+    }
+}
