@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.section-chefs{
+.section-chefs {
     background-color: #7DCD38;
     width: 100%;
     display: flex;
@@ -13,35 +8,35 @@
     align-items: center;
 
     .wave-chefs path {
-        fill: #7DCD38; 
+        fill: #7DCD38;
         width: 100%;
     }
 
-        div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 2%;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2%;
 
-            p{
-                font-family: "Corben", sans-serif;
-                color: #fff;
-                letter-spacing: 2px;
-                font-weight: 100;
-            }
+        p {
+            font-family: "Corben", sans-serif;
+            color: #fff;
+            letter-spacing: 2px;
+            font-weight: 100;
+        }
 
-            h1{
-                font-size: 60px;
-                color: #fff;
-                font-family: "Montserrat", sans-serif;
-                letter-spacing: 3px;
-            }
+        h1 {
+            font-size: 60px;
+            color: #fff;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 3px;
+        }
     }
 
-    .chefs-container{
+    .chefs-container {
         display: flex;
 
-        .chef{
+        .chef {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -50,25 +45,26 @@
             width: 100vw;
             gap: 10%;
 
-            .chef-info{
+            .chef-info {
                 display: flex;
                 flex-direction: column;
 
-                 h2{
+                h2 {
                     font-size: 2rem;
                     color: #fff;
                     font-family: "Montserrat", sans-serif;
-                    
-                 }
 
-                 .p-chefs {
+                }
+
+                .p-chefs {
                     font-size: 1.3rem;
                     color: #fff;
                     font-family: "Montserrat", sans-serif;
                     font-weight: bold;
                 }
             }
-            .chef-image{
+
+            .chef-image {
                 height: 300px;
                 width: 300px;
                 border-radius: 50%;
@@ -79,6 +75,5 @@
 
         }
     }
-    
-}
 
+}
