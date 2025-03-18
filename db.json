@@ -14,6 +14,20 @@
       "id": "e82f",
       "email": "joao@gmail.com",
       "senha": "senha1"
+    },
+    {
+      "id": "fec7",
+      "nome": "Isaque",
+      "email": "joao@gmail.com",
+      "senha": "senha2005@",
+      "telefone": "11954349785"
+    },
+    {
+      "id": "ef18",
+      "nome": "Isaque",
+      "email": "mateus@.com",
+      "senha": "isaque@",
+      "telefone": "11954349785"
     }
   ]
 }
