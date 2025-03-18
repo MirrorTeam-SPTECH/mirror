@@ -22,7 +22,7 @@
             font-family: "Corben", sans-serif;
             color: #fff;
             letter-spacing: 2px;
-            font-weight: 100;
+           
         }
 
         h1 {
@@ -57,10 +57,10 @@
                 }
 
                 .p-chefs {
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                     color: #fff;
                     font-family: "Montserrat", sans-serif;
-                    font-weight: bold;
+                    
                 }
             }
 
