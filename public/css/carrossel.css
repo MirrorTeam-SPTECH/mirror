@@ -93,13 +93,11 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  opacity: 0.7;
-  color: var(--swiper-color);
+  color: #FFFF !important;
   transition: all 0.3s ease;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  opacity: 1;
-  color: var(--swiper-color);
+  color: var(--text-color) !important;
 }

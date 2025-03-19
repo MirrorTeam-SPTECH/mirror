@@ -18,6 +18,7 @@
 
 :root {
     --cor-fundo-home: #FF0000;
+    --text-color: #FFFF;
     --cor-fundo-botao-home: #4d0000;
     --cor-fundo-sessao: #C26700;
     --cor-fundo-section: #FFD940;
@@ -40,6 +41,11 @@
     --hover-color: #cecdcd;
     --button-bg-color: #D9D9D9;
     --button-hover-opacity: 0.8;
+/*------------------------------- Dark-mode ---------------------------------------*/ 
+
+--dark-mode-pao: #452500;
+--dark-mode-queijo: #e9bb04;
+--dark-mode-hamburguer: #2C0000;
 }
 
 body {
@@ -52,3 +58,71 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+
+.funcionalidadesHeader{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFF;
+    }
+    
+    .funcionalidadesHeader img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover; 
+    }
+
+    body.dark-mode .Home{
+        background-color: #7D0000;
+    }    
+    body.dark-mode .container-sobreNos {
+    background-color: var(--dark-mode-pao) !important;
+    }
+    
+    body.dark-mode .wave-sobreNos {
+        background-color: var(--dark-mode-pao);
+    }
+    
+    body.dark-mode .wave-sobreNos path {
+        fill: var(--dark-mode-queijo);
+    }
+    
+    body.dark-mode .chefs-container {
+        background-color: var(--dark-mode-queijo);
+    }
+    
+    body.dark-mode .wave-chefs path{
+        fill: var(--dark-mode-queijo);;
+    }
+    
+    body.dark-mode .section_5{
+        background-color:var(--dark-mode-queijo);;
+    }
+    
+    body.dark-mode .contato_5{
+        background-color: var(--dark-mode-hamburguer);
+    }
+    
+    body.dark-mode .wave-contato {
+        background-color: var(--dark-mode-pao); 
+    }
+    
+    body.dark-mode .wave-contato path {
+        fill: var(--dark-mode-hamburguer); 
+    }
+    
+    body.dark-mode footer{
+        background-color: var(--dark-mode-pao);
+    }
+    
+    body.dark-mode .footer-direitos{
+        background-color: var(--dark-mode-pao);
+    }
+
+    body.dark-mode #loginAplicacao{
+        color: var(--cor-texto-branco);
+    }
