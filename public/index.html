@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirror</title>
+    <link rel="shortcut icon" href="./assets/icon/food-truck.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/carrossel.css">
     <link rel="stylesheet" href="./css/chefs.css">
@@ -15,7 +17,46 @@
 </head>
 
 <body>
-    <section class="sobreNos">
+    <section id="HomeSection" class="Home">
+        <img class="imgFoodTruck" src="./assets/img/Group 3.svg" alt="">
+        <header class="headerHomePortal">
+            <div class="logoPortalChurras">
+                <img src="./assets/img/Portal do Churras - Logo.svg" alt="">
+            </div>
+            <div class="linksHome">
+                <a href="#HomeSection">Home</a>
+                <a href="#SobreNosSection">Sobre nós</a>
+                <a href="#MenuSection">Menu</a>
+                <a href="#ContatoSection">Contato</a>
+            </div>
+            <div class="botoesLoginCadastro">
+                <button id="loginAplicacao">Entrar</button>
+                <button id="cadastroAplicacao">Cadastre-se</button>
+            </div>
+        </header>
+        <div class="containerHome">
+            <div class="leftHome">
+                <div class="miniTitulo">
+                    <span>Food Truck</span>
+                </div>
+                <div class="tituloHomePortal">
+                    <div class="Portaldo">
+                        <span class="PortalHome">Portal</span>
+                        <span class="doHome">do</span>
+                    </div>
+                    <div class="Churras">
+                        <span class="ChurrasHome">
+                            Churras
+                        </span>
+                    </div>
+                </div>
+                <div class="textoBoasVindas">
+                    <span>Boas vindas ao Portal do Churras, onde levamos o sabor do churrasco a sério! Nosso food truck é sinônimo de lanches deliciosos, preparados com ingredientes frescos e selecionados.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="SobreNosSection" class="sobreNos">
         <img src="./assets/img/Group 2.png" alt="">
         <div class="container">
         </div>
@@ -25,7 +66,7 @@
         </svg>
     </section>
     <!-- SESSÃO CHEFS -->
-    <section class="section-chefs">
+    <section id="SobreNosSection" class="section-chefs">
         <div class="chefs-container">
             <div class="chef">
                 <div class="chef-info">
@@ -59,7 +100,7 @@
         </div>
     </section>
     <!-- Carrossel Menu -->
-    <section class="section-carrossel">
+    <section id="MenuSection" class="section-carrossel">
         <div class="carousel-text">
             <p>Esse é o nosso</p>
             <h1>Menu</h1>
@@ -182,7 +223,7 @@
         <div class="swiper-pagination"></div>
     </section>
     <!-- Contato -->
-    <section class="sessao05">
+    <section id="ContatoSection" class="sessao05">
         <div class="section_5">
             <h2>Contato Rápido</h2>
             <div class="input-box">
