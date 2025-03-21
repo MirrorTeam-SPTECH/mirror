@@ -41,6 +41,11 @@
     --hover-color: #cecdcd;
     --button-bg-color: #D9D9D9;
     --button-hover-opacity: 0.8;
+    --cor-fundo-section-color: #EDEDED;
+    --cor-fundo-form: #FFFF;
+    --cor-fundo-input-box: #D9D9D9;
+    --cor-botao-ativo: #A2DC00 ;
+    --cor-fundo-imagem-foodtruck: #FFD900 ;
 /*------------------------------- Dark-mode ---------------------------------------*/ 
 
 --dark-mode-pao: #452500;
