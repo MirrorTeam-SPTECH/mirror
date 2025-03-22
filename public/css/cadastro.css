@@ -15,7 +15,7 @@ body {
 
     .img-background {
         position: absolute;
-        top: 0;
+        top: 5%;
         left: 0;
         width: 100%;
         height: 100%;
@@ -27,7 +27,7 @@ body {
         position: absolute;
         top: 0;
         right: 0;
-        height: 350px;
+        height: 300px;
         width: auto;
         z-index: -2; 
         object-fit: cover;
@@ -37,15 +37,15 @@ body {
         position: absolute;
         bottom: 0;
         left: 0;
-        height: 350px;
+        height: 300px;
         width: auto;
         z-index: -2; 
         object-fit: cover;
     }
 
     section {
-        width: 950px;
-        height: 600px;
+        width: 900px;
+        height: 550px;
         background-color: var(--cor-fundo-section-color);
         display: flex;
         position: relative;
@@ -135,7 +135,7 @@ body {
 
         .img-foodTruck {
             background-color: var(--cor-fundo-imagem-foodtruck);
-            width: 600px;
+            width: 500px;
             height: 100%;
             border-radius: 50% 0 0 50%;
             position: absolute;
