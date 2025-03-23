@@ -87,7 +87,14 @@ body {
     body.dark-mode .container-sobreNos {
     background-color: var(--dark-mode-pao) !important;
     }
-    
+    body.dark-mode .sobreNosTexto h2{
+        color: var(--cor-fundo-form);
+    }
+
+    body.dark-mode .sobreNosTexto p{
+        color: var(--cor-texto-branco);
+    }
+
     body.dark-mode .wave-sobreNos {
         background-color: var(--dark-mode-pao);
     }
