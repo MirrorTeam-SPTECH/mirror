@@ -35,6 +35,18 @@
       "email": "alisson@gmail.com",
       "senha": "senha55!",
       "telefone": "111111111111111"
+    },
+    {
+      "id": "8aef",
+      "nome": "aaaaa",
+      "email": "alisson3@gmail.com",
+      "senha": "senha123!"
+    },
+    {
+      "id": "0d1d",
+      "nome": "alisson",
+      "email": "iajsa@gmail.com",
+      "senha": "Senha123!"
     }
   ]
 }

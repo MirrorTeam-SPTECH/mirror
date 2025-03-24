@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,17 @@
     <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <main class="cadastro">
         <img class="img-background" src="./assets/img/Blob 5.png" alt="Background Image">
         <img class="img-right" src="./assets/img/7-removebg-preview 1.png" alt="Right Image">
         <section>
             <form action="" method="POST">
+                <div class="voltarInicio">
+                    <i href="./index.html" class="fa-solid fa-arrow-left"></i>
+                    <a href="./index.html">voltar</a>
+                </div>
                 <div class="textCadastro">
                     <h2>Cadastro</h2>
                     <p>Boas vindas, cadastre-se e faça login</p>
@@ -21,21 +27,21 @@
                 <div class="parte-cadastro">
                     <label for="input_nome">Nome:</label>
                     <input type="text" id="input_nome" placeholder="Nome" required>
-                    
+
                     <label for="input_email">E-mail:</label>
                     <input type="email" id="input_email" placeholder="E-mail" required>
-                    
+
                     <label for="input_senha">Senha:</label>
                     <input type="password" id="input_senha" placeholder="Senha" required>
-                    
+
                     <label for="input_confirmar">Confirmar Senha:</label>
                     <input type="password" id="input_confirmar" placeholder="Senha" required>
-                    
+
                     <button id="Cadastrar" type="submit">Cadastrar</button>
                 </div>
                 <div class="parte-login">
                     <p>Já possui uma conta? Faça login <a href="login.html">Aqui</a></p>
-                    <p>Faça login com</p>
+                    <p>Cadastre-se com</p>
                 </div>
             </form>
             <div class="img-foodTruck">
@@ -45,4 +51,7 @@
         <img class="img-left" src="./assets/img/6-removebg-preview 1.png" alt="">
     </main>
 </body>
+
 </html>
+<script src="./js/cadastro.js"></script>
+<script src="https://kit.fontawesome.com/17011d8c1f.js" crossorigin="anonymous"></script>

@@ -4,7 +4,6 @@ document.getElementById('Cadastrar').addEventListener('click', function (e) {
     const nomeVar = document.getElementById('input_nome').value;
     const emailVar = document.getElementById('input_email').value;
     const senhaVar = document.getElementById('input_senha').value;
-    const telefoneVar = document.getElementById('input_telefone').value;
     const confirmacaoSenhaVar = document.getElementById('input_confirmar').value;
     const arrobaEmail = emailVar.indexOf('@');
     const pontoEmail = emailVar.indexOf('.com');
@@ -14,7 +13,6 @@ document.getElementById('Cadastrar').addEventListener('click', function (e) {
     if (
         nomeVar === "" ||
         emailVar === "" ||
-        telefoneVar === "" ||
         senhaVar === "" ||
         confirmacaoSenhaVar === ""
     ) {
@@ -23,9 +21,7 @@ document.getElementById('Cadastrar').addEventListener('click', function (e) {
         alert("Email precisa ter @!");
     } else if (pontoEmail < 1) {
         alert("Email precisa ter uma extensão de domínio!");
-    } else if (telefoneVar.length < 11) {
-        alert("Telefone incorreto!");
-    } else if (senhaVar.length < 6 || confirmacaoSenhaVar.length < 6) {
+    }  else if (senhaVar.length < 6 || confirmacaoSenhaVar.length < 6) {
         alert("Senhas devem ter pelo menos 6 caracteres");
     } else if (!senhaTemEspecial) {
         alert("A senha deve conter pelo menos um caractere especial (!, @, #, $, *, &, %)");
@@ -36,7 +32,7 @@ document.getElementById('Cadastrar').addEventListener('click', function (e) {
             nome: nomeVar,
             email: emailVar,
             senha: senhaVar,
-            telefone: telefoneVar
+            
         };
 
         fetch('http://localhost:3000/usuarios', {
